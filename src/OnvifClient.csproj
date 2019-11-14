@@ -5,6 +5,11 @@
     <AssemblyName>Mictlanix.DotNet.OnvifClient</AssemblyName>
     <RootNamespace>Mictlanix.DotNet.Onvif</RootNamespace>
     <ReleaseVersion>0.0.3</ReleaseVersion>
+    <PackageId>OnvifClient.Core</PackageId>
+    <Authors>OnvifClient.Core</Authors>
+    <Product>OnvifClient.Core</Product>
+    <Version>1.0.1</Version>
+    <Description />
   </PropertyGroup>
   <ItemGroup>
     <DotNetCliToolReference Include="dotnet-svcutil" Version="1.0.*" />
