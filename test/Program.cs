@@ -71,10 +71,13 @@ namespace Mictlanix.DotNet.Onvif.Tests {
 										Console.WriteLine ($"\tPan Limits: [{pan.Min}, {pan.Max}] Tilt Limits: [{tilt.Min}, {tilt.Max}] Tilt Limits: [{zoom.Min}, {zoom.Max}]");
 								}
 						}
-						
-					var mediaUri=	await media.GetStreamUriAsync (streamSetup, "Profile_2");
-					Console.WriteLine ($"使用 Profile_2 获取直播地址 Uri={mediaUri.Uri} Timeout={mediaUri.Timeout}");
-					return;
+
+						foreach (var profile in profiles.Profiles) {
+							var mediaUri = await media.GetStreamUriAsync (streamSetup, profile.token);
+							Console.WriteLine ($"使用 {profile.token} 获取直播地址 Uri={mediaUri.Uri} Timeout={mediaUri.Timeout}");
+						}
+					
+						return;
 
 						var configs = await ptz.GetConfigurationsAsync ();
 
