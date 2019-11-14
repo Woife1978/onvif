@@ -8,7 +8,7 @@
     <PackageId>OnvifClient.Core</PackageId>
     <Authors>OnvifClient.Core</Authors>
     <Product>OnvifClient.Core</Product>
-    <Version>1.0.1</Version>
+    <Version>1.0.2</Version>
     <Description>A lightweight ONVIF Client library. 
 Support NetCore.</Description>
     <PackageProjectUrl>https://github.com/pedoc/onvif.git</PackageProjectUrl>
@@ -28,11 +28,11 @@ Support NetCore.</Description>
     <Folder Include="Ptz\" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="System.ServiceModel.Http" Version="4.5.3" />
+    <PackageReference Include="System.ServiceModel.Http" Version="4.6.0" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="System.ServiceModel.Duplex" Version="4.4.*" />
-    <PackageReference Include="System.ServiceModel.NetTcp" Version="4.4.*" />
-    <PackageReference Include="System.ServiceModel.Security" Version="4.4.*" />
+    <PackageReference Include="System.ServiceModel.Duplex" Version="4.6.0" />
+    <PackageReference Include="System.ServiceModel.NetTcp" Version="4.6.0" />
+    <PackageReference Include="System.ServiceModel.Security" Version="4.6.0" />
   </ItemGroup>
 </Project>
