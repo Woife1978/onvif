@@ -9,7 +9,10 @@
     <Authors>OnvifClient.Core</Authors>
     <Product>OnvifClient.Core</Product>
     <Version>1.0.1</Version>
-    <Description />
+    <Description>A lightweight ONVIF Client library. 
+Support NetCore.</Description>
+    <PackageProjectUrl>https://github.com/pedoc/onvif.git</PackageProjectUrl>
+    <PackageReleaseNotes>Compatible with some Huawei IPC</PackageReleaseNotes>
   </PropertyGroup>
   <ItemGroup>
     <DotNetCliToolReference Include="dotnet-svcutil" Version="1.0.*" />
