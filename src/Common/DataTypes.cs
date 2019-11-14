@@ -1,3 +1,4 @@
+using System;
 using Mictlanix.DotNet.Onvif.Device;
 
 namespace Mictlanix.DotNet.Onvif.Common {
@@ -13857,6 +13858,14 @@ namespace Mictlanix.DotNet.Onvif.Common {
 
 		/// <remarks/>
 		H264,
+
+		/// <remarks>
+		/// 此选项不在Onvif的规范中，添加此项仅为支持华为IPC，否则会导致onvif的GetProfilesAsync响应反序列化失败
+		/// 已知包含H265的华为IPC型号(包含H265的华为IPC也有H264的Profile):
+		/// Name,Model=M2221-FL(8-32mm) Fireware=IPC V500R019C10SPC309 OnvifVersion=2.06
+		/// Name,Model=IPC6525-Z30-S Fireware=IPC V200R003C30SPC202 OnvifVersion=16.12
+		/// </remarks>
+		H265
 	}
 
 	/// <remarks/>
